@@ -1,4 +1,7 @@
 extends Node3D
+
+class_name Player
+
 var healthbar
 @export var move_speed:float = 5
 @export var health: int = 3

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu3yepfve1sk4"]
+
+[ext_resource type="Material" uid="uid://bfxbfwejdfiax" path="res://Materials/M_Enemy.tres" id="1_m1htj"]
+[ext_resource type="Script" uid="uid://covfnknqkiv2l" path="res://Scripts/enemy.gd" id="1_wovta"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7fd37"]
+
+[node name="Enemy" type="CharacterBody3D"]
+script = ExtResource("1_wovta")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material = ExtResource("1_m1htj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_7fd37")
